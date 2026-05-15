@@ -1,10 +1,12 @@
 <script setup>
 import ShowCard from './components/ShowCard.vue'
 
+const showsBaseUrl = `${import.meta.env.BASE_URL}shows/`
+
 const relatedShows = [
   {
     title: 'Silent Voice',
-    image: '/shows/anime-card-4.png',
+    image: `${showsBaseUrl}anime-card-4.png`,
     meta: 'Movie 1hr 45m',
     href: '#',
     tags: [
@@ -16,7 +18,7 @@ const relatedShows = [
   },
   {
     title: 'Arcane',
-    image: '/shows/anime-card-5.png',
+    image: `${showsBaseUrl}anime-card-5.png`,
     meta: 'Series 9 Episodes',
     href: '#',
     tags: [
@@ -28,7 +30,7 @@ const relatedShows = [
   },
   {
     title: 'Hero Academia',
-    image: '/shows/anime-card-6.png',
+    image: `${showsBaseUrl}anime-card-6.png`,
     meta: 'Anime 24 Episodes',
     href: '#',
     tags: [
@@ -40,7 +42,7 @@ const relatedShows = [
   },
   {
     title: 'Fate Stay Night',
-    image: '/shows/anime-card-8.png',
+    image: `${showsBaseUrl}anime-card-8.png`,
     meta: 'Movie 1hr 58m',
     href: '#',
     tags: [
